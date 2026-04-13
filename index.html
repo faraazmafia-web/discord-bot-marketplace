@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S&N's Bots</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body{background:#020617;color:white;overflow-x:hidden;}
+
+/* Premium gradient background */
+body::before{
+ content:"";
+ position:fixed;
+ width:200%;height:200%;
+ background:linear-gradient(120deg,#0ea5e9,#22c55e,#0ea5e9);
+ background-size:300% 300%;
+ animation:bgMove 12s infinite;
+ opacity:0.08;
+ z-index:-1;
+}
+@keyframes bgMove{0%{background-position:0%}50%{background-position:100%}100%{background-position:0%}}
+
+header{display:flex;justify-content:space-between;padding:20px 50px;background:rgba(255,255,255,0.05);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.1);} 
+header h1{color:#38bdf8;} 
+nav a{margin-left:25px;text-decoration:none;color:white;opacity:0.8;}
+nav a:hover{opacity:1;}
+
+.hero{text-align:center;padding:140px 20px;} 
+.hero h2{font-size:60px;background:linear-gradient(45deg,#38bdf8,#22c55e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;} 
+.hero p{color:#94a3b8;margin-top:10px;font-size:18px;}
+
+.btn{
+ margin-top:30px;
+ display:inline-flex;
+ align-items:center;
+ gap:10px;
+ padding:16px 35px;
+ background:linear-gradient(45deg,#38bdf8,#22c55e);
+ color:black;
+ border-radius:14px;
+ text-decoration:none;
+ font-weight:bold;
+ transition:0.3s;
+ box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+.btn:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 0 40px #38bdf8;}
+
+.section{padding:80px 40px;max-width:1200px;margin:auto;} 
+
+/* Glass cards */
+.card{
+ background:rgba(255,255,255,0.05);
+ border:1px solid rgba(255,255,255,0.1);
+ border-radius:20px;
+ padding:30px;
+ backdrop-filter:blur(20px);
+ transition:0.4s;
+}
+.card:hover{transform:translateY(-10px);box-shadow:0 20px 60px rgba(0,0,0,0.7);} 
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+
+.price{
+ font-size:50px;
+ margin:20px 0;
+ background:linear-gradient(45deg,#38bdf8,#22c55e);
+ -webkit-background-clip:text;
+ -webkit-text-fill-color:transparent;
+}
+
+.badge{
+ position:absolute;
+ top:15px;
+ right:15px;
+ background:#22c55e;
+ padding:6px 12px;
+ border-radius:10px;
+ font-size:12px;
+}
+
+.notice{
+ margin-top:40px;
+ padding:18px;
+ border-radius:12px;
+ background:rgba(34,197,94,0.1);
+ border:1px solid rgba(34,197,94,0.3);
+ text-align:center;
+}
+
+footer{text-align:center;padding:30px;background:rgba(255,255,255,0.05);} 
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>S&N's Bots</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#pricing">Pricing</a>
+<a href="#tos">TOS</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Premium Discord Bots</h2>
+<p>High quality • Fast delivery • Clean systems</p>
+<a href="https://discord.gg/n9UcFPtUPq" class="btn">🚀 Create Your Bot</a>
+</section>
+
+<section class="section" id="pricing">
+<h2 style="text-align:center;margin-bottom:50px;">💰 Pricing</h2>
+
+<div class="grid">
+
+<div class="card" style="position:relative;grid-column:1/-1;">
+<div class="badge">BEST</div>
+<h3>All-in-One</h3>
+<div class="price">$4 / All in one</div>
+<p>Fully custom bots built exactly how you want.</p>
+<a href="https://discord.gg/n9UcFPtUPq" class="btn">Start Now</a>
+</div>
+
+<div class="card"><h3>Giveaway System</h3><div class="price">$1+</div><p>Basic giveaway commands</p></div>
+<div class="card"><h3>Ticket System</h3><div class="price">$2+</div><p>Buttons, logs & support system</p></div>
+<div class="card"><h3>24/7 Hosting</h3><div class="price">$1+</div><p>Keep your bot online always</p></div>
+<div class="card"><h3>Extra Commands</h3><div class="price">$1+</div><p>Add more features anytime</p></div>
+
+</div>
+
+<div class="notice">⚠️ Open a ticket before payment to discuss your bot.</div>
+
+</section>
+
+
+
+<section class="section" id="tos">
+<h2>📜 Terms</h2>
+<div class="card">
+<p>• Refund only if unfinished</p>
+<p>• No bots against Discord TOS</p>
+<p>• Must provide details</p>
+<p>• No cancelling hosting</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 S&N's Bots</p>
+</footer>
+
+</body>
+</html>
